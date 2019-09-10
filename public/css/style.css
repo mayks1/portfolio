@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Istok+Web:400,700&display=swap&subset=cyrillic');
+
+.nav-link {
+    font-family: 'Istok Web', sans-serif;
+    font-weight: 700;
+}
