@@ -4,3 +4,13 @@
     font-family: 'Istok Web', sans-serif;
     font-weight: 700;
 }
+
+.intro {
+    background-image: url(../images/nature1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    width: 100%;
+
+}
