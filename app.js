@@ -1,13 +1,14 @@
 const { config, engine }            = require('express-edge')
-const createError                   = require('http-errors');
-const express                       = require('express');
-const path                          = require('path');
+const createError                   = require('http-errors')
+const express                       = require('express')
+const path                          = require('path')
 // const cookieParser                  = require('cookie-parser');
-const logger                        = require('morgan');
+const logger                        = require('morgan')
 
 // REQUIRE ROUTES FILES ----------------------------------------->>
-const indexRouter                   = require('./routes/index');
-const usersRouter                   = require('./routes/users');
+const indexRouter                   = require('./routes/index')
+const usersRouter                   = require('./routes/users')
+const postRouter                    = require('./routes/post')
 // -------------------------------------------------------------->>
 const app                           = express();
 
@@ -22,10 +23,11 @@ app.use(express.urlencoded({ extended: false }));
 // app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-
+// ----------------  ROUTES  -----------------------------
 app.use('/', indexRouter);
+app.use('/post', postRouter);
 app.use('/users', usersRouter);
-
+// ----------------  ROUTES  -----------------------------
 
 
 // catch 404 and forward to error handler

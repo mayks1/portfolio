@@ -1,306 +1,163 @@
-<!DOCTYPE html>
-<html lang="en">
+@layout('layouts.app')
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>{{ title }}</title>
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-  <!-- Bootstrap core CSS -->
-  <link href="/css/bootstrap/bootstrap.min.css" rel="stylesheet">
-  <!-- Material Design Bootstrap -->
-  <link href="/css/bootstrap/mdb.min.css" rel="stylesheet">
-  <!-- Your custom styles (optional) -->
-  <link href="/css/style.css" rel="stylesheet">
-</head>
+@section('content')
 
-<body>
+<!--Main layout-->
+<main class="mt-5 pt-5">
+  <div class="container">
 
-  <!--Main Navigation-->
-  <header>
+    <!--Section: Jumbotron-->
+    <section class="card blue-gradient wow fadeIn">
 
-    <!-- Navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar" style="background-color: #2e3951">
-      <div class="container">
+      <!-- Content -->
+      <div class="card-body text-white text-center py-5 px-5 my-5">
 
-        <!-- Brand -->
-        <a class="navbar-brand waves-effect" href="#" target="_blank">
-          <strong class="blue-text text-uppercase font-weight-bold">Mayk's Blog</strong>
+        <h1 class="mb-4">
+          <strong>Какво е Lorem Ipsum?</strong>
+        </h1>
+        <p>
+          <strong>Lorem Ipsum е елементарен примерен текст, използван в печатарската и типографската индустрия.
+          </strong>
+        </p>
+        <h3 class="mb-4">
+          <strong>Откъде произлиза?</strong>
+        </h3>
+        <p class="mb-4">
+          <strong>Противно на всеобщото вярване, Lorem Ipsum не е просто случаен текст. Неговите корени са в
+            класическата Латинска литература от 45г.пр.Хр., което прави преди повече от 2000 години. Richard
+            McClintock, професор по Латински от колежа Hampden-Sydney College във Вирджиния, изучавайки една от
+            най-неясните латински думи "consectetur" в един от пасажите на Lorem Ipsum, и търсейки цитати на думата в
+            класическата литература, открива точния източник. Lorem Ipsum е намерен в секции 1.10.32 и 1.10.33 от "de
+            Finibus Bonorum et Malorum"(Крайностите на Доброто и Злото) от Цицерон, написан през 45г.пр.Хр. Тази книга
+            е трактат по теория на етиката, много популярна през Ренесанса. Първият ред на Lorem Ipsum идва от ред,
+            намерен в секция 1.10.32.</strong>
+        </p>
+        <a   href="/post" class="btn btn-outline-white btn-lg">Прочети повече
+          <i class="fas fa-graduation-cap ml-2"></i>
         </a>
 
-        <!-- Collapse -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      </div>
+      <!-- Content -->
+    </section>
+    <!--Section: Jumbotron-->
 
-        <!-- Links -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <!--Section: Cards-->
+    <section class="pt-5">
 
-          <!-- Left -->
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link waves-effect" href="#">Начало
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link waves-effect" href="#" target="_blank">За Мен</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link waves-effect" href="#" target="_blank">Контакт</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link waves-effect" href="#" target="_blank">Вход</a>
-            </li>
-          </ul>
+      <!--Grid row-->
+      <div class="row mt-3 wow fadeIn">
 
+        <!--Grid column-->
+        <div class="col-lg-5 col-xl-4 mb-4">
+          <!--Featured image-->
+          <div class="view overlay rounded z-depth-1">
+            <img src="/images/img-1.jpg" class="img-fluid" alt="">
+            <a href="/post">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
         </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
+          <h3 class="mb-3 font-weight-bold dark-grey-text">
+            <strong>Защо го използваме?</strong>
+          </h3>
+          <p class="grey-text">Известен факт е, че читателя обръща внимание на съдържанието, което чете, а не на
+            оформлението му. Свойството на Lorem Ipsum е, че до голяма степен има нормално разпределение на буквите и се
+            чете по-лесно, за разлика от нормален текст на английски език като "Това е съдържание, това е съдържание".
+          </p>
+          <a href="/post" class="btn btn-primary btn-md">Прочети повече
+            <i class="fas fa-play ml-2"></i>
+          </a>
+        </div>
+        <!--Grid column-->
 
       </div>
-    </nav>
-    <!-- Navbar -->
+      <!--Grid row-->
 
-  </header>
-  <!--Main Navigation-->
+      <hr class="mb-5">
 
-  <!--Main layout-->
-  <main class="mt-5 pt-5">
-    <div class="container">
+      <!--Grid row-->
+      <div class="row wow fadeIn">
 
-      <!--Section: Jumbotron-->
-      <section class="card blue-gradient wow fadeIn">
+        <!--Grid column-->
+        <div class="col-lg-5 col-xl-4 mb-4">
+          <!--Featured image-->
+          <div class="view overlay rounded z-depth-1">
+            <img src="/images/img-2.jpg" class="img-fluid" alt="">
+            <a href="/post"  >
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+        </div>
+        <!--Grid column-->
 
-        <!-- Content -->
-        <div class="card-body text-white text-center py-5 px-5 my-5">
-
-          <h1 class="mb-4">
-            <strong>Какво е Lorem Ipsum?</strong>
-          </h1>
-          <p>
-            <strong>Lorem Ipsum е елементарен примерен текст, използван в печатарската и типографската индустрия.
-            </strong>
-          </p>
-          <h3 class="mb-4">
-            <strong>Откъде произлиза?</strong>
+        <!--Grid column-->
+        <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
+          <h3 class="mb-3 font-weight-bold dark-grey-text">
+            <strong>Откъде мога да го взема?</strong>
           </h3>
-          <p class="mb-4">
-            <strong>Противно на всеобщото вярване, Lorem Ipsum не е просто случаен текст. Неговите корени са в
-              класическата Латинска литература от 45г.пр.Хр., което прави преди повече от 2000 години. Richard
-              McClintock, професор по Латински от колежа Hampden-Sydney College във Вирджиния, изучавайки една от
-              най-неясните латински думи "consectetur" в един от пасажите на Lorem Ipsum, и търсейки цитати на думата в
-              класическата литература, открива точния източник. Lorem Ipsum е намерен в секции 1.10.32 и 1.10.33 от "de
-              Finibus Bonorum et Malorum"(Крайностите на Доброто и Злото) от Цицерон, написан през 45г.пр.Хр. Тази книга
-              е трактат по теория на етиката, много популярна през Ренесанса. Първият ред на Lorem Ipsum идва от ред,
-              намерен в секция 1.10.32.</strong>
+          <p class="grey-text">Съществуват много вариации на пасажа Lorem Ipsum, но повечето от тях са променени по един
+            или друг начин чрез добавяне на смешни думи или разбъркване на думите, което не изглежда много достоверно.
           </p>
-          <a target="_blank" href="#"
-            class="btn btn-outline-white btn-lg">Прочети повече
-            <i class="fas fa-graduation-cap ml-2"></i>
+          <a href="/post" class="btn btn-primary btn-md">Прочети повече
+            <i class="fas fa-play ml-2"></i>
           </a>
-
         </div>
-        <!-- Content -->
-      </section>
-      <!--Section: Jumbotron-->
+        <!--Grid column-->
 
-      <!--Section: Cards-->
-      <section class="pt-5">
+      </div>
+      <!--Grid row-->
 
-        <!--Grid row-->
-        <div class="row mt-3 wow fadeIn">
+      <hr class="mb-5">
 
-          <!--Grid column-->
-          <div class="col-lg-5 col-xl-4 mb-4">
-            <!--Featured image-->
-            <div class="view overlay rounded z-depth-1">
-              <img src="/images/img-1.jpg" class="img-fluid"
-                alt="">
-              <a href="#" target="_blank">
-                <div class="mask rgba-white-slight"></div>
-              </a>
-            </div>
-          </div>
-          <!--Grid column-->
+      <!--Pagination-->
+      <nav class="d-flex justify-content-center wow fadeIn">
+        <ul class="pagination pg-blue">
 
-          <!--Grid column-->
-          <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
-            <h3 class="mb-3 font-weight-bold dark-grey-text">
-              <strong>Защо го използваме?</strong>
-            </h3>
-            <p class="grey-text">Известен факт е, че читателя обръща внимание на съдържанието, което чете, а не на оформлението му. Свойството на Lorem Ipsum е, че до голяма степен има нормално разпределение на буквите и се чете по-лесно, за разлика от нормален текст на английски език като "Това е съдържание, това е съдържание".</p>
-            <a href="#" target="_blank"
-              class="btn btn-primary btn-md">Прочети повече
-              <i class="fas fa-play ml-2"></i>
+          <!--Arrow left-->
+          <li class="page-item disabled">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+              <span class="sr-only">Previous</span>
             </a>
-          </div>
-          <!--Grid column-->
+          </li>
 
-        </div>
-        <!--Grid row-->
-
-        <hr class="mb-5">
-
-        <!--Grid row-->
-        <div class="row wow fadeIn">
-
-          <!--Grid column-->
-          <div class="col-lg-5 col-xl-4 mb-4">
-            <!--Featured image-->
-            <div class="view overlay rounded z-depth-1">
-              <img src="/images/img-2.jpg" class="img-fluid" alt="">
-              <a href="#" target="_blank">
-                <div class="mask rgba-white-slight"></div>
-              </a>
-            </div>
-          </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
-            <h3 class="mb-3 font-weight-bold dark-grey-text">
-              <strong>Откъде мога да го взема?</strong>
-            </h3>
-            <p class="grey-text">Съществуват много вариации на пасажа Lorem Ipsum, но повечето от тях са променени по един или друг начин чрез добавяне на смешни думи или разбъркване на думите, което не изглежда много достоверно.</p>
-            <a href="#" target="_blank"
-              class="btn btn-primary btn-md">Прочети повече
-              <i class="fas fa-play ml-2"></i>
+          <li class="page-item active">
+            <a class="page-link" href="#">1
+              <span class="sr-only">(current)</span>
             </a>
-          </div>
-          <!--Grid column-->
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#">2</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#">3</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#">4</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#">5</a>
+          </li>
 
-        </div>
-        <!--Grid row-->
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+              <span class="sr-only">Next</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!--Pagination-->
 
-        <hr class="mb-5">
+    </section>
+    <!--Section: Cards-->
 
-        <!--Pagination-->
-        <nav class="d-flex justify-content-center wow fadeIn">
-          <ul class="pagination pg-blue">
+  </div>
+</main>
+<!--Main layout-->
 
-            <!--Arrow left-->
-            <li class="page-item disabled">
-              <a class="page-link" href="#" aria-label="Previous">
-                <span aria-hidden="true">&laquo;</span>
-                <span class="sr-only">Previous</span>
-              </a>
-            </li>
-
-            <li class="page-item active">
-              <a class="page-link" href="#">1
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#">2</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#">3</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#">4</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#">5</a>
-            </li>
-
-            <li class="page-item">
-              <a class="page-link" href="#" aria-label="Next">
-                <span aria-hidden="true">&raquo;</span>
-                <span class="sr-only">Next</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <!--Pagination-->
-
-      </section>
-      <!--Section: Cards-->
-
-    </div>
-  </main>
-  <!--Main layout-->
-
-  <!--Footer-->
-  <footer class="page-footer text-center font-small mdb-color darken-2 mt-4 wow fadeIn">
-
-    <!--Call to action-->
-    <div class="pt-4">
-      <a class="btn btn-outline-white" href="#"
-        target="_blank" role="button">Портфолио
-        <i class="fas fa-download ml-2"></i>
-      </a>
-      <a class="btn btn-outline-white" href="#" target="_blank"
-        role="button">Контакт
-        <i class="fas fa-graduation-cap ml-2"></i>
-      </a>
-    </div>
-    <!--/.Call to action-->
-
-    <hr class="my-4">
-
-    <!-- Social icons -->
-    <div class="pb-4">
-      <a href="#" target="_blank">
-        <i class="fab fa-facebook-f mr-3"></i>
-      </a>
-
-      <a href="#" target="_blank">
-        <i class="fab fa-twitter mr-3"></i>
-      </a>
-
-      <a href="#" target="_blank">
-        <i class="fab fa-youtube mr-3"></i>
-      </a>
-
-      <a href="#" target="_blank">
-        <i class="fab fa-google-plus-g mr-3"></i>
-      </a>
-
-      <a href="#" target="_blank">
-        <i class="fab fa-dribbble mr-3"></i>
-      </a>
-
-      <a href="#" target="_blank">
-        <i class="fab fa-pinterest mr-3"></i>
-      </a>
-
-      <a href="#" target="_blank">
-        <i class="fab fa-github mr-3"></i>
-      </a>
-
-      <a href="#" target="_blank">
-        <i class="fab fa-codepen mr-3"></i>
-      </a>
-    </div>
-    <!-- Social icons -->
-
-    <!--Copyright-->
-    <div class="footer-copyright py-3">
-      © 2019 Copyright:
-      <a href="https://mdbootstrap.com/education/bootstrap/" target="_blank"> Михаил Михайлов </a>
-    </div>
-    <!--/.Copyright-->
-
-  </footer>
-  <!--/.Footer-->
-
-  <!-- SCRIPTS -->
-  <!-- JQuery -->
-  <script type="text/javascript" src="/js/bootstrap/jquery-3.4.1.min.js"></script>
-  <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="/js/bootstrap/popper.min.js"></script>
-  <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="/js/bootstrap/bootstrap.min.js"></script>
-  <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="/js/bootstrap/mdb.min.js"></script>
-  <!-- Initializations -->
-  <script type="text/javascript">
-    // Animations initialization
-    new WOW().init();
-  </script>
-</body>
-
-</html>
+@endsection
