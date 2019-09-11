@@ -1,28 +1,31 @@
 @import url('https://fonts.googleapis.com/css?family=Istok+Web:400,700&display=swap&subset=cyrillic');
 
+
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+
 .nav-link {
     font-family: 'Istok Web', sans-serif;
     font-weight: 700;
 }
 
-.intro {
-    background-image: url(../images/nature1.jpg);
+
+  
+  .hero-image {
+    background-image: url("../images/nature1.jpg");
+    height: 60%;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    height: 50vh;
-    width: 100%;
+    position: relative;
+  }
+  
+  .h1-responsive {
+    font-size: 5vw;
+  }
 
-}
-
-.intro h1 {
-    font-size: 3vw;
-}
-
-.intro h5 {
+  .h5-responsive {
     font-size: 2vw;
-}
-
-.intro a {
-    font-size: 1vw;
-}
+  }
