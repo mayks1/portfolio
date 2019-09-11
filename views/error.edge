@@ -1,12 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <h1>ERROR</h1>
-</body>
-</html>
+@layout('layouts.app')
+
+@section('content')
+
+<main class="mt-5 pt-5 container-404">
+
+
+        <div class="jumbotron container text-center">
+            <h1 class="display-4 text-uppercase font-weight-bold" style="color: #4285f4">Грешка 404</h1>
+            <p class="lead">Страницата, която търсите не е намерена.</p>
+            <hr class="my-4">
+            <a href="/">
+                <button type="button" class="btn btn-primary btn-rounded">Към начална страница</button>
+            </a>
+            
+        </div>
+
+</main>
+
+@endsection

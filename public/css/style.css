@@ -11,6 +11,14 @@ body, html {
     font-weight: 700;
 }
 
+.jumbotron {
+  background-color: #e9ecef;
+}
+
+.btn-rounded {
+  border-radius: .25rem;
+}
+
 
   
   .hero-image {
@@ -28,4 +36,8 @@ body, html {
 
   .h5-responsive {
     font-size: 2vw;
+  }
+
+  .container-404 {
+    height: 70%;
   }
