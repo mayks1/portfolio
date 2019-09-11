@@ -14,3 +14,15 @@
     width: 100%;
 
 }
+
+.intro h1 {
+    font-size: 3vw;
+}
+
+.intro h5 {
+    font-size: 2vw;
+}
+
+.intro a {
+    font-size: 1vw;
+}
