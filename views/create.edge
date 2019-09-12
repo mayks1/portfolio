@@ -1,0 +1,35 @@
+@layout('layouts.app')
+
+@section('content')
+
+<main class="mt-5 pt-5 container">
+
+
+    <form class="border border-light p-5 animated bounceInLeft" action="/posts/store" method="POST" enctype="multipart/form-data">
+
+        <p class="h4 mb-4 text-center">Създаване на Пост</p>
+    
+        <label class="d-none" for="textInput">Text input Label</label>
+        <input type="text" id="textInput" name="title" class="form-control mb-4" placeholder="Заглавие">
+    
+        <label class="d-none" for="textarea">Textarea Label</label>
+        <textarea id="textarea" name="content" class="form-control mb-4" rows="6" placeholder="Текст"></textarea>
+    
+        <div class="input-group mb-4">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Upload</span>
+            </div>
+            <div class="custom-file">
+                <input type="file" name="file" class="custom-file-input" id="fileInput" aria-describedby="fileInput">
+                <label class="custom-file-label" for="fileInput">Качване на снимка</label>
+            </div>
+        </div>
+    
+        <button class="btn btn-indigo btn-block my-4" type="submit">Запис</button>
+    
+    </form>
+    
+
+</main>
+
+@endsection

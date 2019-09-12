@@ -6,6 +6,15 @@ body, html {
     margin: 0;
   }
 
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
 .nav-link {
     font-family: 'Istok Web', sans-serif;
     font-weight: 700;
@@ -22,6 +31,7 @@ body, html {
 
   
   .hero-image {
+    flex-shrink: 0;
     background-image: url("../images/nature1.jpg");
     height: 60%;
     background-position: center;
