@@ -1,9 +1,14 @@
-var express = require('express')
-var router = express.Router()
+var express     = require('express')
+var router      = express.Router()
+const Post      = require('../database/models/Post')
 
 /* GET home page. */
-router.get('/', (req, res, next) => {
-  res.render('index', { title: 'Начало' })
+router.get('/', async (req, res, next) => {
+
+  const posts = await Post.find({})
+
+  res.render('index', { title: 'Начало', posts })
+
 })
 
 module.exports = router

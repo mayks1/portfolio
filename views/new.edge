@@ -5,14 +5,17 @@
 <main class="mt-5 pt-5 container">
 
 
-    <form class="border border-light p-5 animated bounceInLeft" action="/posts/store" method="POST" enctype="multipart/form-data">
+    <form class="border border-light p-5 animated bounceInLeft" action="/posts/new" method="POST">
 
-        <p class="h4 mb-4 text-center">Създаване на Пост</p>
+        <h1 class="h4 mb-4 text-center">Създаване на Пост</h1>
     
-        <label class="d-none" for="textInput">Text input Label</label>
+        <label class="d-none" for="textInput">Заглавие</label>
         <input type="text" id="textInput" name="title" class="form-control mb-4" placeholder="Заглавие">
+
+        <label class="d-none" for="textInput">Категория</label>
+        <input type="text" id="textInput" name="category" class="form-control mb-4" placeholder="Категория">
     
-        <label class="d-none" for="textarea">Textarea Label</label>
+        <label class="d-none" for="textarea">Текст</label>
         <textarea id="textarea" name="content" class="form-control mb-4" rows="6" placeholder="Текст"></textarea>
     
         <div class="input-group mb-4">
